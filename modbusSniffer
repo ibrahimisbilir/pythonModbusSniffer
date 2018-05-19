@@ -58,7 +58,7 @@ def listen():
 	while True:
 		ser.setTimeout(None)
 		rec=''
-		while rec != '04': // hex address of slave
+		while rec != '04': # hex address of slave
 			rec=''
 			rec=ser.read(1).encode('hex')
 		fc = ser.read(1).encode('hex')
